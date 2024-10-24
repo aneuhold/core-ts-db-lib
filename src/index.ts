@@ -18,9 +18,9 @@ import DashboardUserConfig, {
 import NonogramKatanaItemName from './embedded-types/dashboard/nonogramKatanaItem/ItemName.js';
 import NonogramKatanaUpgradeName from './embedded-types/dashboard/nonogramKatanaUpgrade/UpgradeName.js';
 import {
-  DashboardTaskListGlobalFilterSettings,
   DashboardTaskFilterSettings,
   DashboardTaskListFilterSettings,
+  DashboardTaskListGlobalFilterSettings,
   getDefaultTaskListFilterSettings
 } from './embedded-types/dashboard/task/FilterSettings.js';
 import {
@@ -36,8 +36,8 @@ import {
   DashboardTaskListSortSettings,
   DashboardTaskSortBy,
   DashboardTaskSortDirection,
-  DashboardTaskSortSettings,
   DashboardTaskSortSetting,
+  DashboardTaskSortSettings,
   getDefaultTaskListSortSettings
 } from './embedded-types/dashboard/task/SortSettings.js';
 import {
@@ -53,51 +53,51 @@ import DashboardTaskService, {
 
 // Export all the functions and classes from this library
 export {
-  User,
-  validateUser,
   ApiKey,
-  validateApiKey,
-  DashboardUserConfig,
-  validateDashboardUserConfig,
-  DashboardTask,
-  RecurrenceFrequencyType,
-  RecurrenceBasis,
-  RecurrenceEffect,
-  DashboardTaskSortBy,
-  DashboardTaskSortDirection,
-  getDefaultTaskListFilterSettings,
-  getDefaultTaskListSortSettings,
-  validateDashboardTask,
-  DashboardTaskService,
-  NonogramKatanaItem,
-  NonogramKatanaItemName,
-  validateNonogramKatanaItem,
-  NonogramKatanaUpgrade,
-  NonogramKatanaUpgradeName,
-  validateNonogramKatanaUpgrade,
   BaseDocument,
   BaseDocumentWithType,
+  DashboardTask,
+  DashboardTaskService,
+  DashboardTaskSortBy,
+  DashboardTaskSortDirection,
+  DashboardUserConfig,
+  DocumentService,
+  getDefaultTaskListFilterSettings,
+  getDefaultTaskListSortSettings,
+  NonogramKatanaItem,
+  NonogramKatanaItemName,
+  NonogramKatanaUpgrade,
+  NonogramKatanaUpgradeName,
+  RecurrenceBasis,
+  RecurrenceEffect,
+  RecurrenceFrequencyType,
   RequiredUserId,
-  DocumentService
+  User,
+  validateApiKey,
+  validateDashboardTask,
+  validateDashboardUserConfig,
+  validateNonogramKatanaItem,
+  validateNonogramKatanaUpgrade,
+  validateUser
 };
 
 // Export TypeScript types where needed
 export type {
-  DocumentValidator,
-  UserCTO,
-  DocumentMap,
-  RecurrenceInfo,
-  RecurrenceFrequency,
-  ParentRecurringTaskInfo,
-  DashboardTaskMap,
-  DashboardTaskListGlobalFilterSettings,
-  DashboardTaskFilterSettings,
-  DashboardTaskFilterAndSortResult,
-  DashboardTaskListFilterSettings,
-  DashboardTaskListGlobalSortSettings,
-  DashboardTaskSortSettings,
-  DashboardTaskListSortSettings,
-  DashboardTaskSortSetting,
+  DashboardTagSetting,
   DashboardTagSettings,
-  DashboardTagSetting
+  DashboardTaskFilterAndSortResult,
+  DashboardTaskFilterSettings,
+  DashboardTaskListFilterSettings,
+  DashboardTaskListGlobalFilterSettings,
+  DashboardTaskListGlobalSortSettings,
+  DashboardTaskListSortSettings,
+  DashboardTaskMap,
+  DashboardTaskSortSetting,
+  DashboardTaskSortSettings,
+  DocumentMap,
+  DocumentValidator,
+  ParentRecurringTaskInfo,
+  RecurrenceFrequency,
+  RecurrenceInfo,
+  UserCTO
 };

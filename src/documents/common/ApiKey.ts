@@ -1,9 +1,9 @@
 import { ObjectId } from 'bson';
 import crypto from 'crypto';
-import BaseDocument from '../BaseDocument';
-import RequiredUserId from '../../schemas/required-refs/RequiredUserId';
-import Validate from '../../schemas/validators/ValidateUtil';
-import { DocumentValidator } from '../../schemas/validators/DocumentValidator';
+import BaseDocument from '../BaseDocument.js';
+import RequiredUserId from '../../schemas/required-refs/RequiredUserId.js';
+import Validate from '../../schemas/validators/ValidateUtil.js';
+import { DocumentValidator } from '../../schemas/validators/DocumentValidator.js';
 
 export const validateApiKey: DocumentValidator<ApiKey> = (apiKey: ApiKey) => {
   const errors: string[] = [];

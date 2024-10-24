@@ -1,4 +1,4 @@
-import Validate from './ValidateUtil';
+import Validate from './ValidateUtil.js';
 
 describe('Validate', () => {
   let errorsArray: string[];

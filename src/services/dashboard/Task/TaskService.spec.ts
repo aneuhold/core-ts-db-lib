@@ -1,19 +1,19 @@
 import { ObjectId } from 'bson';
-import DashboardTask from '../../../documents/dashboard/Task';
+import DashboardTask from '../../../documents/dashboard/Task.js';
 import {
   RecurrenceBasis,
   RecurrenceEffect,
   RecurrenceFrequency,
   RecurrenceFrequencyType
-} from '../../../embedded-types/dashboard/task/RecurrenceInfo';
-import DashboardTaskService from './TaskService';
-import { DashboardTaskListFilterSettings } from '../../../embedded-types/dashboard/task/FilterSettings';
+} from '../../../embedded-types/dashboard/task/RecurrenceInfo.js';
+import DashboardTaskService from './TaskService.js';
+import { DashboardTaskListFilterSettings } from '../../../embedded-types/dashboard/task/FilterSettings.js';
 import {
   DashboardTaskListSortSettings,
   DashboardTaskSortBy,
   DashboardTaskSortDirection
-} from '../../../embedded-types/dashboard/task/SortSettings';
-import { DashboardTagSettings } from '../../../embedded-types/dashboard/userConfig/Tags';
+} from '../../../embedded-types/dashboard/task/SortSettings.js';
+import { DashboardTagSettings } from '../../../embedded-types/dashboard/userConfig/Tags.js';
 
 describe('DashboardTaskService', () => {
   describe('getNextFrequencyDate', () => {

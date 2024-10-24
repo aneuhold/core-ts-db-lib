@@ -1,19 +1,19 @@
 import { ObjectId } from 'bson';
 import DashboardTask, {
   DashboardTaskMap
-} from '../../../documents/dashboard/Task';
-import DashboardTaskRecurrenceService from './TaskRecurrenceService';
-import { DashboardTaskListFilterSettings } from '../../../embedded-types/dashboard/task/FilterSettings';
+} from '../../../documents/dashboard/Task.js';
+import DashboardTaskRecurrenceService from './TaskRecurrenceService.js';
+import { DashboardTaskListFilterSettings } from '../../../embedded-types/dashboard/task/FilterSettings.js';
 import {
   DashboardTaskListSortSettings,
   DashboardTaskSortDirection
-} from '../../../embedded-types/dashboard/task/SortSettings';
+} from '../../../embedded-types/dashboard/task/SortSettings.js';
 import DashboardTaskFilterService, {
   DashboardTaskFilterResult
-} from './TaskFilterService';
-import DashboardTaskSortService from './TaskSortService';
-import { DashboardTagSettings } from '../../../embedded-types/dashboard/userConfig/Tags';
-import { RecurrenceFrequency } from '../../../embedded-types/dashboard/task/RecurrenceInfo';
+} from './TaskFilterService.js';
+import DashboardTaskSortService from './TaskSortService.js';
+import { DashboardTagSettings } from '../../../embedded-types/dashboard/userConfig/Tags.js';
+import { RecurrenceFrequency } from '../../../embedded-types/dashboard/task/RecurrenceInfo.js';
 
 /**
  * A type for the task filter settings for a particular task.

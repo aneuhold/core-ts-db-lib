@@ -1,16 +1,16 @@
 import { ObjectId } from 'bson';
-import BaseDocumentWithType from '../BaseDocumentWithType';
-import RequiredUserId from '../../schemas/required-refs/RequiredUserId';
-import Validate from '../../schemas/validators/ValidateUtil';
-import { DocumentValidator } from '../../schemas/validators/DocumentValidator';
+import BaseDocumentWithType from '../BaseDocumentWithType.js';
+import RequiredUserId from '../../schemas/required-refs/RequiredUserId.js';
+import Validate from '../../schemas/validators/ValidateUtil.js';
+import { DocumentValidator } from '../../schemas/validators/DocumentValidator.js';
 import {
   ParentRecurringTaskInfo,
   RecurrenceInfo,
   validateRecurrenceInfo
-} from '../../embedded-types/dashboard/task/RecurrenceInfo';
-import { DashboardTaskFilterSettings } from '../../embedded-types/dashboard/task/FilterSettings';
-import { DashboardTaskSortSettings } from '../../embedded-types/dashboard/task/SortSettings';
-import { DocumentMap } from '../../services/DocumentService';
+} from '../../embedded-types/dashboard/task/RecurrenceInfo.js';
+import { DashboardTaskFilterSettings } from '../../embedded-types/dashboard/task/FilterSettings.js';
+import { DashboardTaskSortSettings } from '../../embedded-types/dashboard/task/SortSettings.js';
+import { DocumentMap } from '../../services/DocumentService.js';
 
 export const validateDashboardTask: DocumentValidator<DashboardTask> = (
   task: DashboardTask

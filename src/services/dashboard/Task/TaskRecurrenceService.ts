@@ -3,8 +3,8 @@ import {
   RecurrenceBasis,
   RecurrenceFrequency,
   RecurrenceFrequencyType
-} from '../../../embedded-types/dashboard/task/RecurrenceInfo';
-import DashboardTask from '../../../documents/dashboard/Task';
+} from '../../../embedded-types/dashboard/task/RecurrenceInfo.js';
+import DashboardTask from '../../../documents/dashboard/Task.js';
 
 export default class DashboardTaskRecurrenceService {
   /**

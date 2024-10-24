@@ -1,12 +1,33 @@
 {
   "name": "@aneuhold/core-ts-db-lib",
+  "author": "Anton G. Neuhold Jr.",
+  "license": "MIT",
   "version": "1.0.121",
   "description": "A core database library used for personal projects",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "author": "Anton G Neuhold Jr <agneuhold@gmail.com>",
-  "license": "MIT",
   "packageManager": "yarn@4.5.0",
+  "type": "module",
+  "scripts": {
+    "build": "rimraf lib && tsc --project tsconfig.build.json && tsx ./scripts/copyTsFiles.ts",
+    "lint": "eslint",
+    "test": "jest",
+    "jsr:validate": "tb pkg jsrValidate",
+    "checkAll": "yarn build && yarn lint && yarn test && yarn jsr:validate",
+    "jsr:publish": "tb pkg jsrPublish",
+    "upgrade:core": "yarn up '@aneuhold/*'",
+    "upgrade:all": "yarn up"
+  },
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aneuhold/core-ts-db-lib.git"
@@ -15,32 +36,19 @@
     "url": "https://github.com/aneuhold/core-ts-db-lib/issues"
   },
   "homepage": "https://github.com/aneuhold/core-ts-db-lib#readme",
-  "files": [
-    "lib/**/*"
-  ],
   "keywords": [
-    "Scripting",
+    "Database",
+    "MongoDB",
+    "TypeScript",
     "Node.js"
   ],
-  "scripts": {
-    "pushpub": "yarn build && npm version patch && git push",
-    "build": "tsc",
-    "watch": "tsc -w",
-    "link:local": "cd lib && yarn link",
-    "link:core-ts-lib": "yarn link @aneuhold/core-ts-lib",
-    "unlink:local": "cd lib && yarn unlink",
-    "unlink:core-ts-lib": "yarn unlink @aneuhold/core-ts-lib && yarn install --force",
-    "upgrade:all": "yarn up",
-    "upgrade:core": "yarn up '@aneuhold/*'",
-    "test": "jest",
-    "lint": "eslint"
-  },
   "dependencies": {
     "@aneuhold/core-ts-lib": "^1.1.52",
     "bson": "^6.2.0"
   },
   "devDependencies": {
     "@aneuhold/eslint-config": "^1.0.37",
+    "@aneuhold/main-scripts": "^2.0.4",
     "@types/jest": "^29.5.13",
     "@types/node": "^20.16.10",
     "@types/node-fetch": "^2.6.11",

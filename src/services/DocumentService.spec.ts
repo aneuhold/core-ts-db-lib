@@ -1,4 +1,5 @@
 import { ObjectId } from 'bson';
+import { describe, expect, it } from 'vitest';
 import DocumentService from './DocumentService.js';
 
 describe('DocumentService', () => {

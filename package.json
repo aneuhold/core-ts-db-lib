@@ -4,12 +4,12 @@
   "license": "MIT",
   "version": "1.0.121",
   "description": "A core database library used for personal projects",
-  "packageManager": "yarn@4.5.0",
+  "packageManager": "yarn@4.5.1",
   "type": "module",
   "scripts": {
     "build": "rimraf lib && tsc --project tsconfig.build.json && tsx ./scripts/copyTsFiles.ts",
     "lint": "eslint",
-    "test": "jest",
+    "test": "vitest run",
     "jsr:validate": "tb pkg validateJsr",
     "checkAll": "yarn build && yarn lint && yarn test && yarn jsr:validate",
     "jsr:publish": "tb pkg publishJsr",
@@ -48,16 +48,13 @@
   },
   "devDependencies": {
     "@aneuhold/eslint-config": "^1.0.37",
-    "@aneuhold/main-scripts": "^2.0.4",
-    "@types/jest": "^29.5.13",
+    "@aneuhold/main-scripts": "^2.0.5",
     "@types/node": "^20.16.10",
-    "@types/node-fetch": "^2.6.11",
     "eslint": "^9.13.0",
-    "jest": "^29.7.0",
     "prettier": "^3.3.3",
     "rimraf": "^6.0.1",
-    "ts-jest": "^29.2.5",
     "tsx": "^4.19.1",
-    "typescript": "^5.6.2"
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.3"
   }
 }

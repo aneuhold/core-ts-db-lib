@@ -17,8 +17,8 @@ __metadata:
   resolution: "@aneuhold/core-ts-db-lib@workspace:."
   dependencies:
     "@aneuhold/core-ts-lib": "npm:^2.1.1"
-    "@aneuhold/eslint-config": "npm:^1.0.93"
-    "@aneuhold/main-scripts": "npm:^2.1.0"
+    "@aneuhold/eslint-config": "npm:^1.0.94"
+    "@aneuhold/main-scripts": "npm:^2.1.2"
     "@types/node": "npm:^22.15.17"
     bson: "npm:^6.2.0"
     eslint: "npm:^9.26.0"
@@ -38,9 +38,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aneuhold/eslint-config@npm:^1.0.93":
-  version: 1.0.93
-  resolution: "@aneuhold/eslint-config@npm:1.0.93"
+"@aneuhold/eslint-config@npm:^1.0.94":
+  version: 1.0.94
+  resolution: "@aneuhold/eslint-config@npm:1.0.94"
   dependencies:
     "@eslint/js": "npm:^9.26.0"
     "@stylistic/eslint-plugin-js": "npm:^3.0.0"
@@ -59,13 +59,13 @@ __metadata:
     typescript-eslint: "npm:^8.32.0"
   peerDependencies:
     eslint: ">= 9.26.0"
-  checksum: 10c0/6c19e4589eda1b2b87d160ec796b1dd8fc6390cc4a6912df1eb9fee67c8380e538ca5d6715ec185a9d14fc869f7c63251f8bfc94008b9f54fec70cf56f86cee6
+  checksum: 10c0/037028d4f54779bf511746d13994bf5956ec0708ecf9113d1ee5fd74ebc5d82fe01d5203b22fbea044dd7de517cff94c8158fb8f77369d13c28e6421c81ca370
   languageName: node
   linkType: hard
 
-"@aneuhold/main-scripts@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "@aneuhold/main-scripts@npm:2.1.0"
+"@aneuhold/main-scripts@npm:^2.1.2":
+  version: 2.1.2
+  resolution: "@aneuhold/main-scripts@npm:2.1.2"
   dependencies:
     "@aneuhold/core-ts-lib": "npm:^2.1.1"
     "@inquirer/prompts": "npm:^7.3.2"
@@ -74,7 +74,7 @@ __metadata:
     node-fetch: "npm:^2.7.0"
   bin:
     tb: lib/index.js
-  checksum: 10c0/e1249fc5705d1cb6c7b7a194fcd4c765f0e448175fff65d40180f12ce2be45c706b5514befa5f0e4e7c746f59bd0590b98c7822dd455e37f8104b840fe633e0d
+  checksum: 10c0/c807660c110c93d0c24021ffe881bd7dd847d93ef21a2e7a5002fc2e7e35bf76bace790821390c4f44023dfea57ca7d0ae72d3aaf6c41248c77817b027ee6d01
   languageName: node
   linkType: hard
 
